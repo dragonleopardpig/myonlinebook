@@ -168,6 +168,12 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="notes.html">Table of Contents</a></li>
+
+
+
+
+
 </ul>
 
     </div>
@@ -365,11 +371,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="myonlinebook">
 <h1>myonlinebook<a class="headerlink" href="#myonlinebook" title="Permalink to this heading">#</a></h1>
-<p>git clone <a class="github reference external" href="https://github.com/dragonleopardpig/myonlinebook">dragonleopardpig/myonlinebook</a></p>
 <p>jupyter-book clean mylocalbook/ –all</p>
 <p>jupyter-book build mylocalbook/ –all</p>
+<p>rm -rf myonlinebook/</p>
+<p>git clone <a class="github reference external" href="https://github.com/dragonleopardpig/myonlinebook">dragonleopardpig/myonlinebook</a></p>
 <p>rm -rf myonlinebook/_build</p>
-<p>rsync -avP –delete mylocalbook/ myonlinebook/</p>
+<p>rsync -avP –delete –cvs-exclude mylocalbook/ myonlinebook/</p>
 <p>cd myonlinebook</p>
 <p>git add .</p>
 <p>git commit -m “message”</p>
