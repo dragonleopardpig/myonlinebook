@@ -371,17 +371,21 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="myonlinebook">
 <h1>myonlinebook<a class="headerlink" href="#myonlinebook" title="Permalink to this heading">#</a></h1>
-<p>jupyter-book clean mylocalbook/ –all</p>
-<p>jupyter-book build mylocalbook/ –all</p>
-<p>rm -rf myonlinebook/</p>
-<p>git clone <a class="github reference external" href="https://github.com/dragonleopardpig/myonlinebook">dragonleopardpig/myonlinebook</a></p>
-<p>rm -rf myonlinebook/_build</p>
+<p>#Jupyter Book</p>
+<p>conda install gh –channel conda-forge
+gh auth login</p>
+<p>sudo dpkg -i gcm-linux_amd64.2.3.2.deb
+git-credential-manager configure
+git config –global credential.credentialStore cache
+git clone <a class="github reference external" href="https://github.com/dragonleopardpig/myonlinebook">dragonleopardpig/myonlinebook</a></p>
+<p>jupyter-book clean mylocalbook/ –all
+jupyter-book build mylocalbook/ –all</p>
 <p>rsync -avP –delete –cvs-exclude mylocalbook/ myonlinebook/</p>
-<p>cd myonlinebook</p>
-<p>git add .</p>
-<p>git commit -m “message”</p>
-<p>git push</p>
-<p>ghp-import -n -p -f _build/html</p>
+<p>cd myonlinebook
+git add .
+git commit -m “message”
+git push
+ghp-import -n -p -f _build/html</p>
 </section>
 
     <script type="text/x-thebe-config">
