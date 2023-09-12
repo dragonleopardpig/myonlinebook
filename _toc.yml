@@ -5,5 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: OOP-new
-- file: notes
-- file: README
+- file: jupyter_book_workflow
+
