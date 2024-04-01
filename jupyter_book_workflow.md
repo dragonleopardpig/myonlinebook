@@ -4,6 +4,7 @@
 
 conda install gh --channel conda-forge
 
+<!-- NixOS run this -->
 gh auth login
 
 sudo dpkg -i gcm-linux_amd64.2.3.2.deb
